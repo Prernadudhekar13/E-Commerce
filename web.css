@@ -67,14 +67,16 @@ p{
 
 .navbar{
     /* background-color: rgb(46, 162, 162); */
-    background-color: rgb(128, 128, 128);
+    /* background-color: rgb(128, 128, 128); */
+    background-color:#818ea0;
     height:60px;
     position:sticky;
     top:0;
     left:0;
     
 }
-.navbar-links{
+
+#navbar-links{
     display:flex;
     justify-content :space-evenly;
     align-items: center;
@@ -84,6 +86,11 @@ p{
     
     
 }
+.navbar #mobile{
+    display:none;
+    align-items :center;
+}
+
 /* if i want to change the color after hovering */
 .links{
     color:white;
@@ -412,4 +419,200 @@ p{
     white-space:nowrap;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+footer .col{
+    display:flex;
+    flex-direction: column;
+    /* flex start remebre to read */
+    align-items:flex-start;
+    margin-bottom:20px;
+
+
+}
+footer a{
+    font-size:12px;
+    padding:5px 0;
+    text-decoration: none;
+}
+footer .col h4{
+    font-size:14px;
+    margin-bottom:16px;
+}
+footer .col p{
+    font-size:12px;
+    padding:2px 0;
+}
+footer .follow{
+    margin-top:20px;
+}
+footer .follow h4{
+    margin-bottom:8px;
+}
+
+/* Resonsive nature */
+@media (max-width:799px){
+    .section_p1{
+        padding:40px 40px;
+    }
+    #navbar-links{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position:fixed;
+        top:0;
+        right:-300px;
+        height:100vh;
+        /* width:300px; */
+        width:300px;
+        /* background-color:rgba(215, 212, 212, 0.958); */
+        background-color:#818ea0;
+      
+        box-shadow:0 40px 60px rgb(0, 0,0,0.1);
+        padding:80px 0 0 10px;
+        transition:0.3s;
+
+    }
+    #navbar-links.active{
+        right:0px;
+    }
+    #navbar-links a{
+        margin-bottom:25px;
+        color:#1255b2;
+    }
+    .navbar #mobile{
+        display:flex;
+        align-items :center;
+    }
+    #mobile i{
+        color:#1a1a1a;
+        font-size:24px;
+        padding-left:20px;
+        margin-top: 20px;
+    }
+    #lg_bag{
+        display:none;
+    }
+
+
+    /* hero section */
+    #hero {
+        
+        height: 70vh;
+        /* background-repeat: no-repeat; */
+        background-position: top 30% right 30%;
+       padding: 0 80px;
+    }
+    /* features */
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+    #product1 .pro-container {
+       justify-content: center;
+    }
+    #product1 .pro {
+       margin: 15px 15px;
+    }
+    #banner{
+         height: 20vh
+    }
+    #sm-banner .banner-box {
+        min-width: 250px;
+        height: 25vh;
+       
+        padding: 30px;
+        
+    }
+    #banner3 {
+      padding: 0px 40px;
+    }
+    #banner3 .banner-box {
+        width: 28%;
+        
+    }
+    #newslater .form {
+
+        width: 70%;
+    }
+    .newstext{
+        margin-bottom:10px;
+    }
+
+}
+
+@media (max-width:799px){
+    #navbar-links{
+        height:100vh;
+        /* width:300px; */
+        width:200px;
+        /* background-color:rgba(215, 212, 212, 0.958); */
+        background-color:#818ea0;
+        box-shadow:0 40px 60px rgb(0, 0,0,0.1);
+        padding:80px 0 0 10px;
+        transition:0.3s;
+        
+
+    }
+    .section_p1 {
+        padding:20px;
+    }
+
+    #hero {
+        
+        /* background-repeat: no-repeat; */
+        background-position: 75%;
+        padding: 0 20px;
+    }
+    h1{
+        font-size:38px;
+
+    }
+    h2{
+        font-size:32px;
+        
+    }
+    #feature {
+    
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 150px;
+        margin: 0 0 10px 0;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        margin-bottom:15px;
+        width:100%;
+        height:40vh;
+    }
+    #banner3 {
+       display: inline-block;
+       margin-bottom:10px;
+        padding:0 20px;
+    }
+    #banner3 .banner-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #newslater .form {
+
+        width: 100%;
+    }
+    #newslater {
+        padding:40px 20px;;
+    }
+
 }
