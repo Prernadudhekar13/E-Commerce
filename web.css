@@ -76,6 +76,11 @@ p{
     
 }
 
+#navbar-links .active{
+    text-decoration: underline;
+    color:rgb(20 13 20 / 67%);
+    font-weight:700;
+}
 #navbar-links{
     display:flex;
     justify-content :space-evenly;
@@ -83,7 +88,6 @@ p{
     height:60px;
     width:100vmin;
     transition: 0.3s ease;
-    
     
 }
 .navbar #mobile{
@@ -96,6 +100,7 @@ p{
     color:white;
     /* padding:0 30px; */
     font-size:16px;
+    text-decoration: none;
 }
 .links:hover{
     color:black;
@@ -615,4 +620,59 @@ footer .follow h4{
         padding:40px 20px;;
     }
 
+}
+
+
+/* shop page */
+#page_header{
+    background-image: url(Banner/b1.jpg);
+    height: 40vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding:14px;
+    flex-direction:column;
+    text-align: center;
+}
+#page_header h2,
+#page_header p{
+    color:#fff;
+}
+
+#pagination{
+    /* display:flex; */
+    /* justify-content: center; */
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    padding:15px 20px;
+    background-color:  rgb(46, 162, 162);
+    border:hsl(0, 0%, 100%) solid 0.1px;
+    border-radius:4px;
+    font-weight:700;
+    color:#fff;
+}
+
+#pagination i{
+    
+    font-weight:200;
+    font-size:16px;
+}
+
+/* sproduct */
+#prodetails .sin_proimage{
+    
+    width: 40%;
+    margin-right:50px;
+
+}
+#prodetails .small_img_group{
+    display: flex;
+    justify-content: space-between;
+}
+/* flex-basis: Defines the default size of an element before the remaining space is distributed. */
+.small_img_col{
+    flex-basis: 24%;
+    cursor:pointer;
 }
